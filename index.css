@@ -2,11 +2,23 @@
 html, body{margin:0px; padding:0px;}
 
 @media (orientation: portrait) {
-    #nav {
+    #logo {
+        position: absolute;
+        left: 40px;
+    }
+    #left p {
+        display: none;
+    }
+    #right button{
+        display: none;
+    }
+    #right p {
+        display: none;
+    }
+    #right img {
         display: none;
     }
     #father, #rewards, #celebrate {
-        margin: 100px auto 100px auto;
         flex-direction: column;
     }
     .img {
@@ -14,7 +26,24 @@ html, body{margin:0px; padding:0px;}
         height: 100%;
     }
     .left, .right {
-        height: max-content;
+        height: 50%;
+    }
+    #celebratemsg {
+        margin: 2px;
+    }
+    #celebratemsg p{
+        font-size: 4.5vw;
+    }
+    #celebratemsg div {
+        font-size: 4vw;
+    }
+    #rewardsmsg {
+        font-size: 5vw;
+    }
+    #socials img {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
     }
 }
 
@@ -57,7 +86,7 @@ nav img:hover {
     border-radius: 20px;
     border: 1px solid black;
     padding: 10px;
-    width: 50px;
+    width: max-content;
     text-align: center;
     background-color: white;
 }
@@ -71,11 +100,11 @@ nav img:hover {
     background-color: black;
     border: none;
     padding: 10px;
-    width: 70px;
+    width: max-content;
     text-align: center;
 }
 #joinnow:hover {
-    background-color: rgb(44, 44, 97);
+    background-color: rgb(45, 36, 36);
     cursor: pointer;
 }
 nav p:hover {
@@ -92,7 +121,7 @@ nav p:hover {
 #father {
     display: flex;
     margin: 20px auto 20px auto;
-    height: 380px;
+    height: 490px;
 }
 #fathermsg {
     display: flex;
@@ -124,7 +153,7 @@ nav p:hover {
 
 
 #rewards {
-    height: 210px;
+    height: 380px;
     background-color: rgb(34, 75, 31);
     font-size: 25px;
     display: flex;
@@ -147,7 +176,7 @@ nav p:hover {
 #celebrate {
     height: 500px;
     background-color: rgb(236, 115, 115);
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
     display: flex;
 }
 #celebratemsg {
@@ -156,6 +185,11 @@ nav p:hover {
     flex-direction: column; 
     align-items: center;
     text-align: center;
+    margin: auto 20px;
+    font-size: 40px;
+}
+#celebratesmallmsg {
+    font-size: 20px;
 }
 #favorite {
     border-radius: 20px;
