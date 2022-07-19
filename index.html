@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/424be42ecb.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <nav id="nav">
@@ -20,10 +22,27 @@
                 <img src="https://i.ebayimg.com/images/g/VwcAAOSwbIRfZaUI/s-l500.png" id="location" width="15px" style="margin-right: 10px;">
                 <p>Find a store</p>
             </div>
-            <button id="signin">Sign in</button>
-            <button id="joinnow">Join now</button>
+            <button class="signin">Sign in</button>
+            <button class="joinnow">Join now</button>
         </div>
+        <i class="fa-solid fa-bars" id="mobile_menu"></i>
     </nav>
+    <div class="mobile_nav_info">
+        <div id="mobile_nav_info--content">
+            <p>Menu</p>
+            <p>Rewards</p>
+            <p>Gift Cards</p>
+            <div id="separate"></div>
+            <div>
+                <button class="signin">Sign in</button>
+                <button class="joinnow">Join now</button>
+            </div>
+            <div>
+                <img src="https://i.ebayimg.com/images/g/VwcAAOSwbIRfZaUI/s-l500.png" id="location" width="15px" style="margin-right: 10px;">
+                <p>Find a store</p>
+            </div>
+        </div>
+    </div>
 
     <div id="father" class="container">
         <div id="fathermsg" class="left">
@@ -42,7 +61,7 @@
         </div>
         <div class="right" id="rewardsmsg">
             <p>Summer is brighter with free treats.*</p>
-            <div id="joinrewards" style="width: max-content; padding: 5px 10px; border-radius: 20px; border: 1px solid white; font-size: 18px;">Join Starbucks rewards</div>
+            <div id="joinrewards" style="width: max-content; padding: 5px 10px; border-radius: 20px; border: 1px solid white; font-size: 1rem;">Join Starbucks rewards</div>
         </div>
     </div>
 
